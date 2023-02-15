@@ -61,3 +61,8 @@
 .theme-btn-2{
     @apply text-base text-[#59C378] inline-block px-5 py-2 border border-[#496451] bg-transparent transition-all hover:bg-[#59C378] hover:border-[transparent] hover:text-white
 }
+
+.clip-your-needful-style {
+    -webkit-clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 55% 100%, 0% 100%);
+}

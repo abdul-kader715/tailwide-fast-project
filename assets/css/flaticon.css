@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon";
-    src: url("../fonts/flaticon.ttf?055dd7f306d539966d4deb00419b290b") format("truetype"),
-url("../fonts/flaticon.woff?055dd7f306d539966d4deb00419b290b") format("woff"),
-url("../fonts/flaticon.woff2?055dd7f306d539966d4deb00419b290b") format("woff2"),
-url("../fonts/flaticon.eot?055dd7f306d539966d4deb00419b290b#iefix") format("embedded-opentype"),
-url("../fonts/flaticon.svg?055dd7f306d539966d4deb00419b290b#flaticon") format("svg");
+    src: url("../fonts/flaticon.ttf?7be827e199392bb56ae95dacf43f5036") format("truetype"),
+url("../fonts/flaticon.woff?7be827e199392bb56ae95dacf43f5036") format("woff"),
+url("../fonts/flaticon.woff2?7be827e199392bb56ae95dacf43f5036") format("woff2"),
+url("../fonts/flaticon.eot?7be827e199392bb56ae95dacf43f5036#iefix") format("embedded-opentype"),
+url("../fonts/flaticon.svg?7be827e199392bb56ae95dacf43f5036#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -13,122 +13,107 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     font-weight: normal !important;
     font-variant: normal;
     text-transform: none;
-    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-email:before {
+.flaticon-verified:before {
     content: "\f101";
 }
-.flaticon-phone-call:before {
+.flaticon-coding:before {
     content: "\f102";
 }
-.flaticon-maps-and-flags:before {
+.flaticon-app-development:before {
     content: "\f103";
 }
-.flaticon-instagram:before {
+.flaticon-smartphone:before {
     content: "\f104";
 }
-.flaticon-gallery:before {
+.flaticon-software-developer:before {
     content: "\f105";
 }
-.flaticon-edit:before {
+.flaticon-vector:before {
     content: "\f106";
 }
-.flaticon-play:before {
+.flaticon-palette:before {
     content: "\f107";
 }
-.flaticon-quotation:before {
+.flaticon-add:before {
     content: "\f108";
 }
-.flaticon-pinterest:before {
+.flaticon-social-media:before {
     content: "\f109";
 }
-.flaticon-facebook-app-symbol:before {
+.flaticon-promotion:before {
     content: "\f10a";
 }
-.flaticon-twitter:before {
+.flaticon-email-marketing:before {
     content: "\f10b";
 }
-.flaticon-instagram-1:before {
+.flaticon-self-growth:before {
     content: "\f10c";
 }
-.flaticon-linkedin:before {
+.flaticon-right-arrow:before {
     content: "\f10d";
 }
-.flaticon-youtube:before {
+.flaticon-left-arrow:before {
     content: "\f10e";
 }
-.flaticon-search:before {
+.flaticon-facebook:before {
     content: "\f10f";
 }
-.flaticon-shopping-cart:before {
+.flaticon-dribbble:before {
     content: "\f110";
 }
-.flaticon-left-arrow:before {
+.flaticon-twitter:before {
     content: "\f111";
 }
-.flaticon-user:before {
+.flaticon-linkedin:before {
     content: "\f112";
 }
-.flaticon-comment-white-oval-bubble:before {
+.flaticon-instagram:before {
     content: "\f113";
 }
-.flaticon-calendar:before {
+.flaticon-heart:before {
     content: "\f114";
 }
-.flaticon-right-arrow:before {
+.flaticon-telephone:before {
     content: "\f115";
 }
-.flaticon-left-quote:before {
+.flaticon-phone-call:before {
     content: "\f116";
 }
-.flaticon-left-arrow-1:before {
+.flaticon-envelope:before {
     content: "\f117";
 }
-.flaticon-next:before {
+.flaticon-mail:before {
     content: "\f118";
 }
-.flaticon-phone-call-1:before {
+.flaticon-location:before {
     content: "\f119";
 }
-.flaticon-email-1:before {
+.flaticon-quote:before {
     content: "\f11a";
 }
-.flaticon-house:before {
+.flaticon-right-quote-sign:before {
     content: "\f11b";
 }
-.flaticon-quotation-1:before {
+.flaticon-left-quote:before {
     content: "\f11c";
 }
-.flaticon-coding:before {
+.flaticon-right-quote:before {
     content: "\f11d";
 }
-.flaticon-technical-support:before {
+.flaticon-play:before {
     content: "\f11e";
 }
-.flaticon-right-quote:before {
+.flaticon-play-1:before {
     content: "\f11f";
 }
-.flaticon-send:before {
+.flaticon-loupe:before {
     content: "\f120";
 }
-.flaticon-engineering:before {
+.flaticon-user:before {
     content: "\f121";
 }
-.flaticon-arrow:before {
-    content: "\f122";
-}
-.flaticon-right-arrow-1:before {
-    content: "\f123";
-}
-.flaticon-living-room:before {
-    content: "\f124";
-}
-.flaticon-living-room-1:before {
-    content: "\f125";
-}
-.flaticon-staircase:before {
-    content: "\f126";
-}
+

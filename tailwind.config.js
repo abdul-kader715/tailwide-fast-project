@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './**/*.{html,js}',
+    './**/*.{html,js}','./node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
     container: {
@@ -35,5 +35,9 @@ module.exports = {
       'heading-font': ['Futura PT'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin'),
+  ],
+
+  
 }

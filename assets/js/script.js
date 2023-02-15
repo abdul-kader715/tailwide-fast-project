@@ -451,24 +451,24 @@
 
 
 
-/*------------------------------------------
-        = Header search toggle
-    -------------------------------------------*/
-    if($(".header-search-form-wrapper").length) {
+    /*------------------------------------------
+            = Header search toggle
+        -------------------------------------------*/
+    if ($(".header-search-form-wrapper").length) {
         var searchToggleBtn = $(".search-toggle-btn");
         var searchToggleBtnIcon = $(".search-toggle-btn i");
         var searchContent = $(".header-search-form");
         var body = $("body");
 
-        searchToggleBtn.on("click", function(e) {
+        searchToggleBtn.on("click", function (e) {
             searchContent.toggleClass("header-search-content-toggle");
             searchToggleBtnIcon.toggleClass("fi flaticon-search fi ti-close");
             e.stopPropagation();
         });
 
-        body.on("click", function() {
+        body.on("click", function () {
             searchContent.removeClass("header-search-content-toggle");
-        }).find(searchContent).on("click", function(e) {
+        }).find(searchContent).on("click", function (e) {
             e.stopPropagation();
         });
     }
@@ -516,22 +516,7 @@
     }
 
 
-    /*------------------------------------------
-        = Testimonial SLIDER
-    -------------------------------------------*/
-    if ($(".wpo-testimonial-wrap").length) {
-        $(".wpo-testimonial-wrap").owlCarousel({
-            autoplay: false,
-            smartSpeed: 300,
-            margin: 20,
-            loop: true,
-            fade: true,
-            autoplayHoverPause: true,
-            dots: true,
-            nav: false,
-            items: 1,
-        });
-    }
+
     /*------------------------------------------
         = Testimonial SLIDER
     -------------------------------------------*/
@@ -729,27 +714,29 @@
     /*------------------------------------------
         = blog-slider
     -------------------------------------------*/
-  
-    if ($(".wpo-blog-slider").length) {
-        $(".wpo-blog-slider").owlCarousel({
+
+    /*------------------------------------------
+        = wpo-blog-slide 
+    -------------------------------------------*/
+    if ($(".wpo-blog-slide").length) {
+        $(".wpo-blog-slide").owlCarousel({
             autoplay: false,
             smartSpeed: 300,
-            margin: 20,
-            center:true,
+            margin: 30,
             loop: true,
             autoplayHoverPause: true,
-            dots: true,
-            nav: false,
+            dots: false,
+            nav: true,
+            navText: ['<i class="fi flaticon-left-arrow" aria-hidden="true"></i>', '<i class="fi flaticon-right-arrow" aria-hidden="true"></i>'],
+            autoplay: true,
             responsive: {
                 0: {
                     items: 1,
-                    dots: true,
                     nav: false
                 },
 
-                500: {
-                    items: 1,
-                    dots: true,
+                600: {
+                    items: 2,
                     nav: false
                 },
 
@@ -769,39 +756,73 @@
         });
     }
 
-
     /*------------------------------------------
-        = wpo-project-single-main-img
+    wpo-project-slide
     -------------------------------------------*/
-    if($(".wpo-project-single-main-img".length)) {
-        $(".wpo-project-single-main-img").owlCarousel({
-            mouseDrag: false,
-            smartSpeed: 500,
+    if ($(".wpo-project-slide").length) {
+        $(".wpo-project-slide").owlCarousel({
+            autoplay: true,
+            smartSpeed: 300,
             margin: 30,
-            loop:true,
-            nav: true,
-            navText: ['<i class="fi ti-arrow-left"></i>','<i class="fi ti-arrow-right"></i>'],
+            items: 3,
+            loop: true,
+            autoplayHoverPause: true,
             dots: false,
-            items: 1
-        });
-    } 
+            arrows: true,
+            navText: ['<i class="fi ti-arrow-left"></i>', '<i class="fi ti-arrow-right"></i>'],
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: true,
+                    arrows: false,
+                    nav: false,
+                },
 
+                575: {
+                    items: 1,
+                    dots: true,
+                },
+                767: {
+                    items: 2,
+                    dots: true,
+                    nav: false,
+                },
 
-    /*------------------------------------------
-        = POST SLIDER
-    -------------------------------------------*/
-    if($(".post-slider".length)) {
-        $(".post-slider").owlCarousel({
-            mouseDrag: false,
-            smartSpeed: 500,
-            margin: 30,
-            loop:true,
-            nav: true,
-            navText: ['<i class="fi ti-arrow-left"></i>','<i class="fi ti-arrow-right"></i>'],
-            dots: false,
-            items: 1
+                992: {
+                    items: 3,
+                    dots: false
+                },
+
+                1200: {
+                    items: 3
+                }
+            }
         });
     }
+
+
+    /*------------------------------------------
+        = Testimonial slider 1
+    -------------------------------------------*/
+    if ($(".wpo-testimonial-wrap").length) {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            focusOnSelect: true,
+            dots: true,
+
+        });
+    }
+
 
     /*------------------------------------------
         = SHOP DETAILS PAGE PRODUCT SLIDER
@@ -910,7 +931,7 @@
 
                 adress: "required",
 
-                service: "required", 
+                service: "required",
 
                 subject: {
                     required: true
