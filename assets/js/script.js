@@ -137,6 +137,25 @@
     }
 
 
+       // Parallax background
+       function bgParallax() {
+        if ($(".parallax").length) {
+            $(".parallax").each(function () {
+                var height = $(this).position().top;
+                var resize = height - $(window).scrollTop();
+                var doParallax = -(resize / 5);
+                var positionValue = doParallax + "px";
+                var img = $(this).data("bg-image");
+
+                $(this).css({
+                    backgroundImage: "url(" + img + ")",
+                    backgroundPosition: "50%" + positionValue,
+                    backgroundSize: "cover"
+                });
+            });
+        }
+    }
+
     //Setting hero slider
     function heroSlider() {
         if ($(".hero-slider").length) {
@@ -1032,6 +1051,7 @@
 
 
 
+    
     /*==========================================================================
         WHEN DOCUMENT LOADING
     ==========================================================================*/

@@ -613,3 +613,64 @@
 }
 
 
+.theme-btn  {
+  background: #59C378;
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  padding: 15px 35px;
+  padding-right: 65px;
+  border: 0;
+  border-radius: 40px;
+  text-transform: capitalize;
+  -webkit-backface-visibility: hidden;
+  z-index: 1;
+  position: relative;
+  font-size: 16px;
+  transition: all 0.5s ease-out;
+}
+.theme-btn:before  {
+  position: absolute;
+  right: 30px;
+  top: 51%;
+  content: "\e628";
+  font-family: "themify";
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+.theme-btn:after  {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  background: #41b362;
+  transition: all 0.5s ease-out;
+  opacity: 0;
+  z-index: -1;
+}
+.theme-btn:hover, .theme-btn:focus, .theme-btn:active {
+  background: #46bc69;
+  color: #fff;
+}
+.theme-btn:hover:after {
+  opacity: 1;
+}
+@media (max-width: 991px) {
+  .theme-btn  {
+    font-size: 18px;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .theme-btn  {
+    padding: 12px 18px;
+    font-size: 14px;
+    padding-right: 45px;
+  }
+  .theme-btn:before :before {
+    right: 18px;
+  }
+}
