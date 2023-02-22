@@ -23,12 +23,13 @@
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/css/base.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+   
 </head>
 
 <body>
 
     <!-- start page-wrapper -->
-    <div class="page-wrapper">
+    <div class="page-wrapper overflow-hidden">
         <!-- start preloader -->
         <div class="preloader">
             <div class="vertical-centered-box">
@@ -43,47 +44,113 @@
         </div>
 
         <!-- start elito-header-section -->
-        <section class="bg-[#131313] z-40">
+        <section class="bg-transparent  absolute left-0 top-0 w-full z-50">
+            <h1 class="hidden"></h1>
                 <div class="wraper">
                      <div class="flex items-center justify-between">
-                        <div class="max-w-[195px]">
-                            <a class="text-[45px] font-bold flex items-center text-white" href="index.html">
+                         <!-- mobile-menu -->
+                         <div id="dl-menu" class="dl-menuwrapper">
+                            <button class="dl-trigger">Open Menu</button>
+                            <ul class="dl-menu">
+                                <li>
+                                    <a href="#">Home</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="index.html">Main Home</a></li>
+                                        <li><a href="index-2.html">Home Style 2</a></li>
+                                        <li><a href="index-3.html">Home Style 3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Service</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="service.html">Service</a></li>
+                                        <li><a href="service-single.html">Service Single</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Portfolio</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
+                                        <li><a href="portfolio-masonary.html">Portfolio Masonary</a></li>
+                                        <li><a href="portfolio.html">Portfolio Slide</a></li>
+                                        <li><a href="portfolio-single.html">Portfolio Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Pages</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="pricing.html">Pricing</a></li>
+                                        <li><a href="404.html">Error 404</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="blog.html">Blog right sidebar</a></li>
+                                        <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                                        <li><a href="blog-fullwidth.html">Blog fullwidth</a></li>
+                                        <li>
+                                            <a href="#">Blog details</a>
+                                            <ul class="dl-submenu">
+                                                <li>
+                                                    <a href="blog-single.html">Blog details right sidebar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-single-left-sidebar.html">Blog details left sidebar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog-single-fullwidth.html">Blog details fullwidth</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-[195px] md:w-[280px] sm:w-[200px] col:w-[50px]">
+                            <a class="text-[45px] col:text-[25px] font-bold flex items-center text-white" href="index.html">
                             <img class=" rounded-[50%] mr-[10px] " src="assets/images/logo.png" alt="">Elito.</a>
                         </div>
-                        <ul class="">
+                        <ul class="md:hidden">
                             <li class="relative inline-block group">
-                                <a href="#" class="relative text-[16px] py-[35px] px-[20px] text-white block capitalize font-base-font font-medium
+                                <a href="#" class="relative text-[16px] lg:text-[14px] py-[35px] xl:py-[30px] px-[20px] xl:px-[6px] text-white block capitalize font-base-font font-medium
                                 before:absolute before:left-0 before:bottom-0 before:w-full before:h-[4px] before:bg-[#59C378] before:content 
                                 before:opacity-1 before:visible before:transition-all before:rounded-[3px]
                                 ">Home</a>
                                 <ul class="absolute w-[240px]  left-0 top-[110%] p-[20px] z-[111]  bg-[#fff] shadow-[#3e419f17]  transition-all  opacity-0 invisible
                                 group-hover:opacity-100  group-hover:top-full group-hover:visible">
                                     <li>
-                                        <a href="index.html" class="text-[16px] inline-block py-[5px] capitalize text-[#002642] group relative overflow-hidden font-bold transition-all 
+                                        <a href="index.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#002642] group relative overflow-hidden font-bold transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Main Home</a>
                                     </li>
                                     <li>
-                                        <a href="index-2.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="index-2.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Home Style 2</a>
                                     </li> 
                                     <li>
-                                        <a href="index-3.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="index-3.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Home Style 3</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="relative inline-block">
-                                <a href="about.html" class="relative group text-[16px] py-[35px] px-[20px] text-white block capitalize font-base-font font-medium
+                                <a href="about.html" class="relative group text-[16px] lg:text-[14px] py-[35px] xl:py-[30px] px-[20px] xl:px-[6px] text-white block capitalize font-base-font font-medium
                                 before:absolute before:left-0 before:bottom-0 before:w-full before:h-[4px] before:bg-[#59C378] before:content 
                                 before:opacity-0 before:invisible before:transition-all before:rounded-[3px]
                                  hover:before:opacity-100 hover:before:visible
                                 ">About</a>
                             </li>
                             <li class="relative inline-block group">
-                                <a href="#" class="relative group text-[16px] py-[35px] px-[20px] text-white block capitalize font-base-font font-medium
+                                <a href="#" class="relative group text-[16px] lg:text-[14px] py-[35px] xl:py-[30px] px-[20px] xl:px-[6px] text-white block capitalize font-base-font font-medium
                                 before:absolute before:left-0 before:bottom-0 before:w-full before:h-[4px] before:bg-[#59C378] before:content 
                                 before:opacity-0 before:invisible before:transition-all before:rounded-[3px]
                                  hover:before:opacity-100 hover:before:visible
@@ -91,94 +158,94 @@
 
                                 <ul class="absolute w-[240px]  left-0 top-[110%] p-[20px] z-[111]  bg-[#fff] shadow-[#3e419f17]  transition-all  opacity-0 invisible group-hover:opacity-100  group-hover:top-full group-hover:visible">
                                     <li>
-                                        <a href="service.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="service.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Service</a>
                                     </li>
                                         
                                     <li>
-                                        <a href="service-single.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="service-single.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Service Single</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="relative inline-block group">
-                                <a href="#" class="relative group text-[16px] py-[35px] px-[20px] text-white block capitalize font-base-font font-medium
+                                <a href="#" class="relative group text-[16px] lg:text-[14px] py-[35px] xl:py-[30px] px-[20px] xl:px-[6px] text-white block capitalize font-base-font font-medium
                                 before:absolute before:left-0 before:bottom-0 before:w-full before:h-[4px] before:bg-[#59C378] before:content 
                                 before:opacity-0 before:invisible before:transition-all before:rounded-[3px]
                                  hover:before:opacity-100 hover:before:visible
                                 ">Portfolio</a>
                                 <ul class="absolute w-[240px]  left-0 top-[110%] p-[20px] z-[111]  bg-[#fff] shadow-[#3e419f17]  transition-all  opacity-0 invisible group-hover:opacity-100  group-hover:top-full group-hover:visible">
                                     <li>
-                                        <a href="portfolio-grid.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="portfolio-grid.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Portfolio Grid</a>
                                     </li>
                                         
                                     <li>
-                                        <a href="portfolio-masonary.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="portfolio-masonary.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Portfolio Masonary</a>
                                     </li>
 
                                     <li>
-                                        <a href="portfolio.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="portfolio.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Portfolio Slide</a>
                                     </li>
 
                                     <li>
-                                        <a href="portfolio-single.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="portfolio-single.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Portfolio Single</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="relative inline-block group">
-                                <a href="about.html" class="relative group text-[16px] py-[35px] px-[20px] text-white block capitalize font-base-font font-medium
+                                <a href="about.html" class="relative group text-[16px] lg:text-[14px] py-[35px] xl:py-[30px] px-[20px] xl:px-[6px] text-white block capitalize font-base-font font-medium
                                 before:absolute before:left-0 before:bottom-0 before:w-full before:h-[4px] before:bg-[#59C378] before:content 
                                 before:opacity-0 before:invisible before:transition-all before:rounded-[3px]
                                  hover:before:opacity-100 hover:before:visible
                                 ">Blog</a>
                                 <ul class="absolute w-[240px]  left-0 top-[110%] p-[20px] z-[111]  bg-[#fff] shadow-[#3e419f17]  transition-all  opacity-0 invisible group-hover:opacity-100  group-hover:top-full group-hover:visible">
                                     <li>
-                                        <a href="blog.html" class="text-[16px] capitalize inline-block py-[5px] text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="blog.html" class="text-[16px] lg:text-[14px] capitalize inline-block py-[5px] text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Blog right sidebar</a>
                                     </li>
                                         
                                     <li>
-                                        <a href="blog-left-sidebar.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="blog-left-sidebar.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Blog left sidebar</a>
                                     </li>
 
                                     <li>
-                                        <a href="blog-fullwidth.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                        <a href="blog-fullwidth.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Blog fullwidth</a>
                                     </li>
-
-                                    <li class="relative group2">
-                                        <a href="#" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                    
+                                    <li class="relative group/group-2">
+                                        <a href="#" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                         after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                         hover:after:w-full">Blog details</a>
-                                        <ul class="absolute w-[240px]  left-[120%] top-0 p-[20px] z-[111]  bg-[#fff] shadow-[#3e419f17]  transition-all  opacity-0 invisible  group2-hover:opacity-100  group2-hover:left-[110%] group2-hover:visible">
+                                        <ul class="absolute w-[240px]  left-[120%] top-0 p-[20px] z-[111]  bg-[#fff] shadow-[#3e419f17] opacity-0 invisible  transition-all group-hover/group-2:opacity-100  group-hover/group-2:left-[110%] group-hover/group-2:visible">
                                             <li>
-                                                <a href="blog-single.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                                <a href="blog-single.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                                 after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                                 hover:after:w-full">Blog details right sidebar</a>
                                             </li>
                                                 
                                             <li>
-                                                <a href="blog-single-left-sidebar.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                                <a href="blog-single-left-sidebar.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                                 after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                                 hover:after:w-full">Blog details left sidebar</a>
                                             </li>
         
                                             <li>
-                                                <a href="blog-single-fullwidth.html" class="text-[16px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
+                                                <a href="blog-single-fullwidth.html" class="text-[16px] lg:text-[14px] inline-block py-[5px] capitalize text-[#202020] group relative overflow-hidden font-medium transition-all 
                                                 after:absolute after:left-0 after:bottom-[5px] after:w-0 after:h-[1px] after:content after:bg-[#59C378]  after:transition-all 
                                                 hover:after:w-full">Blog details fullwidth</a>
                                             </li>
@@ -187,23 +254,21 @@
                                 </ul>
                             </li>
                             <li class="relative inline-block">
-                                <a href="contact.html" class="relative group text-[16px] py-[35px] px-[20px] text-white block capitalize font-base-font font-medium
+                                <a href="contact.html" class="relative group text-[16px] lg:text-[14px] py-[35px] xl:py-[30px] px-[20px] xl:px-[6px] text-white block capitalize font-base-font font-medium
                                 before:absolute before:left-0 before:bottom-0 before:w-full before:h-[4px] before:bg-[#59C378] before:content 
                                 before:opacity-0 before:invisible before:transition-all before:rounded-[3px]
                                  hover:before:opacity-100 hover:before:visible
                                 ">Contact</a>
                             </li>
-                            
-                           
                         </ul>
-                        <a class="theme-btn" download="My Cv" href="assets/images/cv.jpg">
+                        <a class="theme-btn col:w-50px" download="My Cv" href="assets/images/cv.jpg">
                             <img class="hidden overflow-hidden opacity-0" alt="ImageName" src="assets/images/cv.jpg">
                             Resume
                         </a>
+                       
                      </div>  
                 </div>
         </section>
-
         <!-- end elito-header-section -->
 
         <!-- start elito-hero-section -->
@@ -211,7 +276,7 @@
                 <div class="w-full h-full bg-cover bg-center  text-left z-50">
                     <div class="wraper">
                             <div class="flex-1">
-                                <div class="w-[660px] lg:w-[570px] mt-[210px] md:mt-[100px] md:w-full  md:text-center">
+                                <div class="w-[660px] lg:w-[470px] mt-[210px] xl:mt-[150px]  md:mt-[100px] md:w-full  md:text-center">
                                         <h2 class="text-white text-[90px] capitalize font-bold leading-[100px] mb-[10px]  lg:text-[65px] lg:mb-[10px] lg:leading-[75px] md:text-[45px] md:leading-[45px]  col:text-[35px] col:leading-[35px] col:mb-[0px]">
                                         <span class="block text-[60px] text-[#FFE600] lg:text-[45px] md:text-[35px] col:text-[35px] col:leading-[35px] col:mb-[0px]">Hello,</span>
                                             I am Ronald.</h2>
@@ -223,7 +288,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute top-[53%] rounded-[50%] right-[200px] z-10 transform -translate-y-1/2 2xl:max-w-[500px] lg:max-w-[450px] lg:top-[54%] lg:right-[50px] md:top-[68%] md:mx-auto md:right-auto md:left-1/2 md:-translate-x-1/2 sm:top-[75%] sm:w-[400px] sm:h-[400px] sm:left-1/2 sm:m-0 col:top-[68%] col:w-[300px] col:h-[300px]">
+                    <div class="absolute top-[53%] rounded-[50%] right-[200px] z-10 transform -translate-y-1/2 2xl:max-w-[500px] lg:max-w-[450px]  lg:top-[54%] 2xl:right-[80px] xl:right-[30px] lg:right-[50px] md:top-[68%] md:mx-auto md:right-auto md:left-1/2 md:-translate-x-1/2 sm:top-[75%] sm:w-[400px] sm:h-[400px] sm:left-1/2 sm:m-0 col:top-[68%] col:w-[300px] col:h-[300px]">
                         <img class="rounded-[50%]" src="assets/images/slider/1.jpg" alt="">
                              <div class="absolute left-0 top-[20%] w-[110px] h-[110px] p-[20px] bg-white rounded-[25px] md:top-[15%] md:w-[95px] md:h-[95px] md:p-[15px] md:rounded-[15px] col:top-[10%] col:w-[70px] col:h-[70px] col:p-[15px] col:rounded-[15px] floating-item">
                                 <img class="rounded-[0px] max-w-[100%]" src="assets/images/icon/photoshop.svg" alt="">

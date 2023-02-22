@@ -25,6 +25,11 @@
     toggleMobileNavigation();
 
 
+    $( '.dl-menuwrapper' ).dlmenu({
+            animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+    });
+    
+
     // Function for toggle class for small menu
     function toggleClassForSmallNav() {
         var windowWidth = window.innerWidth;
