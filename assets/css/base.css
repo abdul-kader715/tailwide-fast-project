@@ -1724,7 +1724,7 @@ All this is done for any sub-level being entered.
 	overflow: hidden;
 }
 
- .swiper-container,
+.swiper-container,
 .hero-container {
 	width: 100%;
 	height: 100%;
@@ -1746,8 +1746,8 @@ All this is done for any sub-level being entered.
 	text-align: left;
 }
 
- .slide-inner:before,
- .hero-inner:before {
+.slide-inner:before,
+.hero-inner:before {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1777,14 +1777,15 @@ All this is done for any sub-level being entered.
 	transition: all 0.3s;
 }
 
- .swiper-button-prev:hover,
- .swiper-button-next:hover {
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
 	opacity: 0.9;
 }
 
 @media (max-width: 767px) {
-	 .swiper-button-prev,
-	 .swiper-button-next {
+
+	.swiper-button-prev,
+	.swiper-button-next {
 		display: none;
 	}
 }
@@ -1814,13 +1815,13 @@ All this is done for any sub-level being entered.
 
 @media (max-width: 991px) {
 
- .swiper-button-prev,
-.swiper-button-next {
+	.swiper-button-prev,
+	.swiper-button-next {
 		display: none;
 	}
 }
 
- .swiper-pagination-bullet {
+.swiper-pagination-bullet {
 	width: 12px;
 	height: 12px;
 	text-align: center;
@@ -1832,7 +1833,7 @@ All this is done for any sub-level being entered.
 }
 
 @media screen and (min-width: 992px) {
-.swiper-pagination-bullet {
+	.swiper-pagination-bullet {
 		display: none;
 	}
 }
@@ -1856,41 +1857,184 @@ All this is done for any sub-level being entered.
 	margin: 0 8px;
 }
 
-.slider-image{
+.slider-image {
 	width: 100%;
-    height: 950px;
-    position: absolute;
-    left: 0;
-    top: 0;
+	height: 950px;
+	position: absolute;
+	left: 0;
+	top: 0;
 	z-index: -10;
-    -webkit-animation: kenburn 25s 2s alternate infinite;
-    animation: kenburn 25s 2s alternate infinite;
+	-webkit-animation: kenburn 25s 2s alternate infinite;
+	animation: kenburn 25s 2s alternate infinite;
 }
+
 .slider-image img {
-    height: 950px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 100%;
+	height: 950px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
 }
 
 @-webkit-keyframes kenburn {
 	from {
-	  -webkit-transform: scale3d(1, 1, 1);
-	  transform: scale3d(1, 1, 1);
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
 	}
+
 	to {
-	  -webkit-transform: scale3d(1.3, 1.3, 1.3);
-	  transform: scale3d(1.3, 1.3, 1.3);
+		-webkit-transform: scale3d(1.3, 1.3, 1.3);
+		transform: scale3d(1.3, 1.3, 1.3);
 	}
-  }
-  
-  @keyframes kenburn {
+}
+
+@keyframes kenburn {
 	from {
-	  -webkit-transform: scale3d(1, 1, 1);
-	  transform: scale3d(1, 1, 1);
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
 	}
+
 	to {
-	  -webkit-transform: scale3d(1.3, 1.3, 1.3);
-	  transform: scale3d(1.3, 1.3, 1.3);
+		-webkit-transform: scale3d(1.3, 1.3, 1.3);
+		transform: scale3d(1.3, 1.3, 1.3);
 	}
-  }
+}
+
+/* partners-area css  */
+
+.partners-slider .owl-item img {
+	width: unset;
+}
+
+.partners-slider .owl-nav {
+	display: none;
+}
+
+/* form css */
+#email-error {
+	color: red;
+}
+
+#service-error {
+	color: red;
+}
+
+#name-error {
+	color: red;
+}
+
+
+.error-handling-messages {
+	width: 100% !important;
+	margin-top: 15px !important;
+}
+
+label.error {
+	color: red;
+	font-size: calc-rem-value(14);
+	font-weight: normal;
+	margin: 5px 0 0 0;
+	text-align: left;
+	display: block;
+}
+
+#c-loader,
+#loader {
+	display: none;
+	margin-top: 10px;
+}
+
+#c-loader i,
+#loader i {
+	font-size: 30px;
+	color: #59C378;
+	display: inline-block;
+	-webkit-animation: rotating linear 2s infinite;
+	animation: rotating linear 2s infinite;
+}
+
+#success,
+#c-success,
+#c-error,
+#error {
+	width: 100%;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 16px;
+	text-align: center;
+	display: none;
+
+}
+
+@media (max-width:767px) {
+
+	#success,
+	#c-success,
+	#c-error,
+	#error {
+		font-size: 15px;
+	}
+}
+
+#c-success,
+#success {
+	background-color: lighten(green, 5%);
+	border-left: 5px solid green;
+	margin-bottom: 5px;
+}
+
+#c-error,
+#error {
+	background-color: lighten(red, 5%);
+	border-left: 5px solid red;
+}
+
+/* wpo-project-single-main-img  css*/
+
+.wpo-project-single-main-img {
+	margin-bottom: 30px;
+}
+
+.wpo-project-single-main-img .owl-controls {
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+
+.wpo-project-single-main-img .owl-nav [class*=owl-]:hover {
+	background:#59C378 ;
+	color: #fff;
+}
+
+.wpo-project-single-main-img .owl-nav [class*=owl-] {
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	line-height: 58px;
+	padding: 0;
+	margin: 0;
+	border-radius: 50%;
+	color: #59C378;
+	border: 0;
+	transition: all .3s;
+
+}
+.wpo-project-single-main-img .owl-nav .fi::before {
+		font-size: 20px;
+}
+
+
+.wpo-project-single-main-img .owl-nav .owl-prev,
+.wpo-project-single-main-img .owl-nav .owl-next {
+	position: absolute;
+	top: 50%;
+}
+
+.wpo-project-single-main-img .owl-nav .owl-prev {
+	left: 15px;
+}
+
+.wpo-project-single-main-img .owl-nav .owl-next {
+	right: 15px;
+}

@@ -703,9 +703,9 @@
         cssEase: 'linear'
     });
 
-    /*------------------------------------------
-           = PARTNERS SLIDER
-       -------------------------------------------*/
+      /*------------------------------------------
+        = PARTNERS SLIDER
+    -------------------------------------------*/
     if ($(".partners-slider").length) {
         $(".partners-slider").owlCarousel({
             autoplay: true,
@@ -715,9 +715,10 @@
             autoplayHoverPause: true,
             dots: false,
             arrows: false,
+            nav: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2
                 },
 
                 550: {
@@ -729,12 +730,11 @@
                 },
 
                 1200: {
-                    items: 6
+                    items: 4
                 }
             }
         });
     }
-
     /*------------------------------------------
         = blog-slider
     -------------------------------------------*/
@@ -847,7 +847,22 @@
         });
     }
 
-
+ /*------------------------------------------
+        = wpo-project-single-main-img
+-------------------------------------------*/
+    if ($(".wpo-project-single-main-img".length)) {
+        $(".wpo-project-single-main-img").owlCarousel({
+            mouseDrag: false,
+            smartSpeed: 500,
+            margin: 30,
+            loop: true,
+            nav: true,
+            navText: ['<i class="fi ti-arrow-left"></i>', '<i class="fi ti-arrow-right"></i>'],
+            dots: false,
+            items: 1
+        });
+    }
+    
     /*------------------------------------------
         = SHOP DETAILS PAGE PRODUCT SLIDER
     -------------------------------------------*/
@@ -938,6 +953,7 @@
     })
 
 
+
     /*------------------------------------------
         = CONTACT FORM SUBMISSION
     -------------------------------------------*/
@@ -957,10 +973,9 @@
 
                 service: "required",
 
-                subject: {
-                    required: true
-                }
+                guest: "required",
 
+                meal: "required",
 
             },
 
@@ -968,7 +983,10 @@
                 name: "Please enter your name",
                 email: "Please enter your email address",
                 phone: "Please enter your phone number",
-                subject: "Please select your contact subject"
+                adress: "Please enter your adress",
+                service: "Please select your contact service",
+                guest: "Please select your guest Number",
+                meal: "Please select your Meal Name"
             },
 
             submitHandler: function (form) {
