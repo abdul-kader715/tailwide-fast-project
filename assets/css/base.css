@@ -2003,7 +2003,7 @@ label.error {
 }
 
 .wpo-project-single-main-img .owl-nav [class*=owl-]:hover {
-	background:#59C378 ;
+	background: #59C378;
 	color: #fff;
 }
 
@@ -2020,8 +2020,9 @@ label.error {
 	transition: all .3s;
 
 }
+
 .wpo-project-single-main-img .owl-nav .fi::before {
-		font-size: 20px;
+	font-size: 20px;
 }
 
 
@@ -2036,5 +2037,65 @@ label.error {
 }
 
 .wpo-project-single-main-img .owl-nav .owl-next {
+	right: 15px;
+}
+
+
+.unactive-color {
+	color: #D8D8D8;
+	transition: all .3s ease-in-out;
+}
+
+.current {
+	color: #59C378;
+}
+
+
+
+/* blog css slider */
+.post-slider .owl-controls {
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+
+.post-slider .owl-nav [class*=owl-]:hover {
+	background: #59C378;
+	color: #fff;
+}
+
+.post-slider .owl-nav [class*=owl-] {
+	background: #1e1d1d;
+	width: 50px;
+	height: 50px;
+	line-height: 58px;
+	padding: 0;
+	margin: 0;
+	border-radius: 50%;
+	color: #59C378;
+	transition: all .3s ease-in-out;
+	border: 0;
+}
+
+.post-slider .fi::before {
+	font-size: 20px;
+}
+
+
+
+.post-slider .owl-nav .owl-prev,
+.post-slider .owl-nav .owl-next {
+	position: absolute;
+	top: 50%;
+	@include translatingY();
+}
+
+.post-slider .owl-nav .owl-prev {
+	left: 15px;
+}
+
+.post-slider .owl-nav .owl-next {
 	right: 15px;
 }

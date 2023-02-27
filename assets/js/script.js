@@ -735,9 +735,21 @@
             }
         });
     }
-    /*------------------------------------------
-        = blog-slider
+  /*------------------------------------------
+        = POST SLIDER
     -------------------------------------------*/
+    if ($(".post-slider".length)) {
+        $(".post-slider").owlCarousel({
+            mouseDrag: false,
+            smartSpeed: 500,
+            margin: 30,
+            loop: true,
+            nav: true,
+            navText: ['<i class="fi ti-arrow-left"></i>', '<i class="fi ti-arrow-right"></i>'],
+            dots: false,
+            items: 1
+        });
+    }
 
     /*------------------------------------------
         = wpo-blog-slide 
