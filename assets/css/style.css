@@ -5730,6 +5730,14 @@ textarea.form-control.is-invalid{
   margin-bottom: 0.75rem;
 }
 
+.mb-\[50px\]{
+  margin-bottom: 50px;
+}
+
+.mb-\[-125px\]{
+  margin-bottom: -125px;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -5756,10 +5764,6 @@ textarea.form-control.is-invalid{
 
 .ml-7{
   margin-left: 1.75rem;
-}
-
-.mb-\[50px\]{
-  margin-bottom: 50px;
 }
 
 .mt-2{
@@ -5946,6 +5950,14 @@ textarea.form-control.is-invalid{
   height: 85px;
 }
 
+.h-\[180px\]{
+  height: 180px;
+}
+
+.h-\[550px\]{
+  height: 550px;
+}
+
 .h-\[1000px\]{
   height: 1000px;
 }
@@ -6094,6 +6106,14 @@ textarea.form-control.is-invalid{
   width: 85px;
 }
 
+.w-\[calc\(50\%-30px\)\]{
+  width: calc(50% - 30px);
+}
+
+.w-\[calc-\(100\%-25px\)\]{
+  width: calc-(100%-25px);
+}
+
 .w-\[660px\]{
   width: 660px;
 }
@@ -6132,6 +6152,10 @@ textarea.form-control.is-invalid{
 
 .max-w-\[33\.33\%\]{
   max-width: 33.33%;
+}
+
+.max-w-\[440px\]{
+  max-width: 440px;
 }
 
 .max-w-\[350px\]{
@@ -7031,6 +7055,10 @@ textarea.form-control.is-invalid{
   border-radius: 30px;
 }
 
+.rounded-\[55px\]{
+  border-radius: 55px;
+}
+
 .rounded-\[10px\]{
   border-radius: 10px;
 }
@@ -7175,6 +7203,16 @@ textarea.form-control.is-invalid{
 .border-\[\#3e3b3b\]{
   --tw-border-opacity: 1;
   border-color: rgb(62 59 59 / var(--tw-border-opacity));
+}
+
+.border-\[\#363636\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(54 54 54 / var(--tw-border-opacity));
+}
+
+.border-\[\#59C378\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(89 195 120 / var(--tw-border-opacity));
 }
 
 .border-\[\#373737\]{
@@ -7585,12 +7623,24 @@ textarea.form-control.is-invalid{
   padding: 40px;
 }
 
+.p-\[50px\]{
+  padding: 50px;
+}
+
 .p-\[10px\]{
   padding: 10px;
 }
 
 .p-1{
   padding: 0.25rem;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.p-\[5px\]{
+  padding: 5px;
 }
 
 .py-\[35px\]{
@@ -7691,6 +7741,16 @@ textarea.form-control.is-invalid{
 .py-\[40px\]{
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.py-\[12px\]{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.px-\[22px\]{
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .px-12{
@@ -8298,6 +8358,10 @@ textarea.form-control.is-invalid{
   line-height: 85px;
 }
 
+.leading-\[22px\]{
+  line-height: 22px;
+}
+
 .leading-\[100px\]{
   line-height: 100px;
 }
@@ -8328,14 +8392,6 @@ textarea.form-control.is-invalid{
 
 .leading-tight{
   line-height: 1.25;
-}
-
-.leading-\[\]{
-  line-height: ;
-}
-
-.leading-\[22px\]{
-  line-height: 22px;
 }
 
 .tracking-\[2px\]{
@@ -8408,6 +8464,11 @@ textarea.form-control.is-invalid{
 .text-\[\#002642\]{
   --tw-text-opacity: 1;
   color: rgb(0 38 66 / var(--tw-text-opacity));
+}
+
+.text-\[\#fff\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-\[\#336699\]\/\[\.35\]{
@@ -8667,6 +8728,10 @@ textarea.form-control.is-invalid{
 
 .outline-double{
   outline-style: double;
+}
+
+.outline-0{
+  outline-width: 0px;
 }
 
 .ring{
@@ -9571,6 +9636,10 @@ textarea.form-control.is-invalid{
   border-color: rgb(73 73 73 / var(--tw-border-opacity));
 }
 
+.hover\:border-transparent:hover{
+  border-color: transparent;
+}
+
 .hover\:bg-\[\#59C378\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(89 195 120 / var(--tw-bg-opacity));
@@ -9659,6 +9728,15 @@ textarea.form-control.is-invalid{
 
 .focus\:border-transparent:focus{
   border-color: transparent;
+}
+
+.focus\:border-\[\#59C378\]:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(89 195 120 / var(--tw-border-opacity));
+}
+
+.focus\:bg-transparent:focus{
+  background-color: transparent;
 }
 
 .focus\:bg-blue-700:focus{
@@ -9872,6 +9950,10 @@ textarea.form-control.is-invalid{
     margin-bottom: 40px;
   }
 
+  .lg\:h-\[900px\]{
+    height: 900px;
+  }
+
   .lg\:h-\[650px\]{
     height: 650px;
   }
@@ -10057,6 +10139,10 @@ textarea.form-control.is-invalid{
     margin-top: 80px;
   }
 
+  .md\:mb-7{
+    margin-bottom: 1.75rem;
+  }
+
   .md\:mb-\[10px\]{
     margin-bottom: 10px;
   }
@@ -10075,10 +10161,6 @@ textarea.form-control.is-invalid{
 
   .md\:mt-\[40px\]{
     margin-top: 40px;
-  }
-
-  .md\:mb-7{
-    margin-bottom: 1.75rem;
   }
 
   .md\:block{
@@ -10404,6 +10486,10 @@ textarea.form-control.is-invalid{
     border-left-color: transparent;
   }
 
+  .sm\:p-7{
+    padding: 1.75rem;
+  }
+
   .sm\:py-\[80px\]{
     padding-top: 80px;
     padding-bottom: 80px;
@@ -10443,6 +10529,10 @@ textarea.form-control.is-invalid{
 
   .sm\:pb-\[60px\]{
     padding-bottom: 60px;
+  }
+
+  .sm\:pt-\[50px\]{
+    padding-top: 50px;
   }
 
   .sm\:pb-\[70px\]{
@@ -10689,6 +10779,10 @@ textarea.form-control.is-invalid{
     width: 40px;
   }
 
+  .col\:w-\[calc\(100\%-25px\)\]{
+    width: calc(100% - 25px);
+  }
+
   .col\:w-full{
     width: 100%;
   }
@@ -10755,6 +10849,10 @@ textarea.form-control.is-invalid{
     font-size: 90px;
   }
 
+  .col\:text-\[18px\]{
+    font-size: 18px;
+  }
+
   .col\:text-\[14px\]{
     font-size: 14px;
   }
@@ -10765,5 +10863,9 @@ textarea.form-control.is-invalid{
 
   .col\:leading-\[28px\]{
     line-height: 28px;
+  }
+
+  .col\:leading-\[30px\]{
+    line-height: 30px;
   }
 }
