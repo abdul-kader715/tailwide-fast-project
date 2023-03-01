@@ -5774,6 +5774,14 @@ textarea.form-control.is-invalid{
   margin-top: 0.75rem;
 }
 
+.mb-\[35px\]{
+  margin-bottom: 35px;
+}
+
+.mb-\[30\]{
+  margin-bottom: 30;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -6172,6 +6180,10 @@ textarea.form-control.is-invalid{
 
 .max-w-\[590px\]{
   max-width: 590px;
+}
+
+.max-w-full{
+  max-width: 100%;
 }
 
 .flex-\[0\2c 0\2c 33\.33\%\]{
@@ -7627,20 +7639,16 @@ textarea.form-control.is-invalid{
   padding: 50px;
 }
 
+.p-\[5px\]{
+  padding: 5px;
+}
+
 .p-\[10px\]{
   padding: 10px;
 }
 
 .p-1{
   padding: 0.25rem;
-}
-
-.p-5{
-  padding: 1.25rem;
-}
-
-.p-\[5px\]{
-  padding: 5px;
 }
 
 .py-\[35px\]{
@@ -7826,6 +7834,16 @@ textarea.form-control.is-invalid{
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-\[\]{
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[200px\]{
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .pl-0{
@@ -10163,6 +10181,10 @@ textarea.form-control.is-invalid{
     margin-top: 40px;
   }
 
+  .md\:mt-\[50px\]{
+    margin-top: 50px;
+  }
+
   .md\:block{
     display: block;
   }
@@ -10263,6 +10285,11 @@ textarea.form-control.is-invalid{
   .md\:py-\[35px\]{
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+
+  .md\:px-\[100px\]{
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .md\:pb-\[60px\]{
@@ -10490,6 +10517,10 @@ textarea.form-control.is-invalid{
     padding: 1.75rem;
   }
 
+  .sm\:p-0{
+    padding: 0px;
+  }
+
   .sm\:py-\[80px\]{
     padding-top: 80px;
     padding-bottom: 80px;
@@ -10513,6 +10544,11 @@ textarea.form-control.is-invalid{
   .sm\:px-\[15px\]{
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .sm\:px-\[100px\]{
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .sm\:pl-0{
